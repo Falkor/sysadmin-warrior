@@ -1,6 +1,6 @@
 ##############################################################################
 # Rakefile - Configuration file for rake (http://rake.rubyforge.org/)
-# Time-stamp: <Lun 2015-03-09 16:53 svarrette>
+# Time-stamp: <Mon 2016-06-27 09:43 svarrette>
 #
 # Copyright (c) 2016  <>
 #                       ____       _         __ _ _
@@ -19,6 +19,10 @@ require 'falkorlib'
 ## placeholder for custom configuration of FalkorLib.config.*
 ## See https://github.com/Falkor/falkorlib
 
+# Adapt the versioning aspects
+FalkorLib.config.versioning do |c|
+  c[:type] = 'gem'
+end
 
 # Git flow customization
 FalkorLib.config.gitflow do |c|
