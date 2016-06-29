@@ -22,6 +22,10 @@ require 'falkorlib'
 # Adapt the versioning aspects
 FalkorLib.config.versioning do |c|
   c[:type] = 'gem'
+  c[:source]['gem'] = {
+    :filename  => 'lib/sysadmin-warrior/version.rb',
+    :getmethod => 'SysAdminWarrior::Version.to_s',
+  }
 end
 
 # Git flow customization
