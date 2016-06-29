@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sysadmin-warrior (0.0.1)
+    sysadmin-warrior (0.0.2)
       falkorlib (~> 0.6.11)
       rake (~> 10.2)
       thor (~> 0.19)
